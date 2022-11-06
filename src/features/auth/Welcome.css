@@ -37,6 +37,11 @@
     padding: 0;
     font-size: 1.5rem !important;
   }
+  .mobile::after {
+    content: "";
+    width: 0px;
+    height: 0px;
+  }
 }
 
 @keyframes welcomeTitle {
