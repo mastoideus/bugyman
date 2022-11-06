@@ -24,6 +24,11 @@
   .welcome__title {
     font-size: 2rem;
   }
+  .welcome__alink::after {
+    content: "";
+    width: 0px;
+    height: 0px;
+  }
 
   .third-triangle {
     display: none;
