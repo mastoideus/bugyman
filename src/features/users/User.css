@@ -1,0 +1,42 @@
+.user {
+  width: 30%;
+  background-color: rgb(10, 10, 10);
+  box-shadow: 1px 1px 5px 5px rgb(31, 31, 31);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 699px) {
+  .user {
+    width: 100%;
+  }
+}
+
+.user__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.2rem;
+  font-family: var(--primary-fontf);
+  margin: 0.5rem;
+  border: 1px solid darkred;
+}
+.user__headerName {
+  font-size: 1rem;
+  font-family: var(--primary-fontf);
+  color: var(--secondary-color);
+}
+.user__avatar {
+  color: rgb(34, 33, 33);
+}
+
+.user__body {
+  padding: 0 6rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.user__editBtn {
+  font-size: 1rem;
+  animation: none;
+}

@@ -1,0 +1,12 @@
+.users_container {
+  display: flex;
+  gap: 5%;
+  flex-wrap: wrap;
+  margin-bottom: 0rem;
+}
+
+@media (max-width: 699px) {
+  .users_container {
+    flex-direction: column;
+  }
+}

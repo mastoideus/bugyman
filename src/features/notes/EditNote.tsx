@@ -1,0 +1,25 @@
+import React from "react";
+import { useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
+import { selectAllUsers } from "../users/usersApiSlice";
+import { selectNoteById } from "./notesApiSlice";
+import EditNoteForm from "./EditNoteForm";
+
+const EditNote = () => {
+  const { id } = useParams();
+  const note: any = useSelector((state) => selectNoteById(state, id!));
+  const users: any = useSelector(selectAllUsers);
+
+  console.log(note);
+  console.log(users);
+
+  const content =
+    note && users ? (
+      <EditNoteForm note={note} users={users} />
+    ) : (
+      <p>Loading...</p>
+    );
+  return content;
+};
+
+export default EditNote;

@@ -1,0 +1,76 @@
+.welcome {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.welcome__date {
+  color: var(--main-color);
+  font-family: var(--secondary-fontf);
+}
+
+.welcome__title {
+  font-size: 8rem;
+  color: var(--secondary-color);
+  width: 40%;
+
+  margin: 0 auto 1rem auto;
+  border-left: 20px solid darkred;
+  border-bottom: 8px solid darkred;
+  animation-name: welcomeTitle;
+  animation-duration: 1.5s;
+}
+
+@media (max-width: 699px) {
+  .welcome__title {
+    font-size: 2rem;
+  }
+
+  .third-triangle {
+    display: none;
+  }
+  .mobile {
+    padding: 0;
+    font-size: 1.5rem !important;
+  }
+}
+
+@keyframes welcomeTitle {
+  0% {
+    border-left: 0px solid darkred;
+  }
+  100% {
+    border-left: 20px solid darkred;
+  }
+}
+
+.welcome__links {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  border: 1px solid darkred;
+  padding: 0.4rem 0;
+  cursor: pointer;
+  z-index: 300;
+  color: var(--main-color);
+}
+
+.welcome__alink {
+  color: whitesmoke;
+}
+
+.welcome__links::after {
+  background-color: darkred;
+  height: 500px;
+}
+
+.third-triangle {
+  position: absolute;
+  right: 198px;
+  rotate: 45%;
+  top: 37%;
+  border-color: var(--secondary-color);
+  border-bottom: 100px solid darkred;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+  border-bottom-color: var(--secondary-color);
+}

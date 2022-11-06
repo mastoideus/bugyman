@@ -1,0 +1,80 @@
+.form {
+  color: var(--secondary-color);
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 699px) {
+  .form {
+    width: 100%;
+  }
+}
+
+.form-container {
+  margin-top: 2rem;
+}
+
+.form__input {
+  padding: 1rem 0.7rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  outline: none;
+  border: none;
+  background-color: rgb(57, 56, 56);
+  background-image: linear-gradient(to right, rgb(19, 19, 19), rgb(16, 16, 16));
+  color: white;
+}
+.form__select {
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: rgb(42, 40, 40);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.form__iconBtn {
+  animation: none;
+  padding: 0;
+  font-size: 1.5rem;
+}
+.form__titleNewUser {
+  /*box-shadow: 0px 4px 8px 0px darkred;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;*/
+}
+.form__label {
+  color: wheat;
+  text-align: left;
+  font-weight: bolder;
+}
+
+.form__select option {
+  padding: 0.5rem;
+  font-family: var(--primary-fontf);
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  color: white;
+  text-align: center;
+  color: rgb(217, 126, 126);
+  box-sizing: border-box;
+}
+
+option:hover {
+  background-color: rgb(57, 56, 56);
+}
+
+option:checked {
+  background-color: transparent;
+}
+
+select option:checked,
+select option:hover {
+  box-shadow: 0 0 10px 100px #000 inset;
+  border: 1px solid darkred;
+  box-sizing: border-box;
+}

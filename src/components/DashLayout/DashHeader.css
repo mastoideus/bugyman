@@ -1,0 +1,108 @@
+.dash-header {
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  z-index: 200;
+  padding: 0.8rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  color: var(--main-color);
+}
+
+.header__links {
+  font-size: 1rem;
+  padding: 0 2rem;
+  text-align: center;
+
+  border-right: 1px solid darkred;
+  border-left: 1px solid darkred;
+  position: relative;
+}
+
+@media (max-width: 699px) {
+  .header__links {
+    padding: 0 0.5rem;
+  }
+}
+
+.header__links::before {
+  content: "";
+  position: absolute;
+  height: 10%;
+  width: 0%;
+  background-color: darkred;
+  transition: all 0.5s;
+  left: 2rem;
+  bottom: 0;
+}
+
+.header__links:hover::before {
+  width: 30%;
+}
+
+.dash-header::before {
+  content: "";
+  position: absolute;
+  left: 49.98%;
+  top: 0;
+  width: 0.5px;
+  height: 16px;
+  background-color: gray;
+  animation-name: bugLogo;
+  animation-duration: 2s;
+}
+
+@keyframes bugLogo {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 16px;
+  }
+}
+
+.dash-header__logo {
+  font-size: 1.3rem;
+  font-family: var(--secondary-fontf);
+  animation-name: bug;
+  animation-duration: 2s;
+}
+
+@keyframes bug {
+  0% {
+    transform: translateY(-150%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.dash-header__navList {
+  display: flex;
+  margin-right: 8px;
+}
+
+ul li {
+  border-left: 2px solid darkred;
+  border-right: 2px solid darkred;
+  padding: 0 0.2rem;
+  color: var(--secondary-color);
+}
+
+.dash-header__dashboard {
+  border-top: 2px solid rgb(50, 50, 50);
+  text-align: center;
+  padding: 0.4rem 0;
+  color: rgb(50, 50, 50);
+  font-weight: bolder;
+}
+
+.welcome__logoutBtn {
+  background-color: black;
+  font-family: var(--primary-fontf);
+}

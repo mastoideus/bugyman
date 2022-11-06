@@ -1,0 +1,18 @@
+.select__newNoteForm {
+  padding: 1rem;
+  font-size: 1rem;
+  color: wheat;
+}
+
+.select__newNoteForm option {
+  padding: 1rem;
+  background-color: black;
+}
+
+option:hover {
+  background-color: rgb(57, 56, 56);
+}
+
+option:checked {
+  background-color: transparent;
+}

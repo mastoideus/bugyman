@@ -1,0 +1,236 @@
+.public {
+  text-align: center;
+
+  position: relative;
+  margin: 0 auto;
+  margin-top: 7rem;
+  box-sizing: border-box;
+}
+
+.public__btn {
+  padding: 1rem 2rem;
+  width: 100%;
+
+  background-color: transparent;
+  transition: all 0.5s;
+  font-family: var(--primary-fontf);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.public__btn::before {
+  content: "";
+  transition: all 1s;
+  rotate: 45deg;
+}
+.public__btn::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 35%;
+  height: 2%;
+
+  transition: all 1s;
+  rotate: 45deg;
+}
+
+.public__btn:hover.public__btn::before {
+  width: 60%;
+  background-color: lightgreen;
+}
+.public__btn:hover.public__btn::after {
+  width: 155%;
+  height: 3%;
+  background-color: black;
+}
+
+@media (min-width: 699px) {
+  .public {
+    margin: 0 auto;
+  }
+}
+
+.imgContainer {
+  width: 80%;
+
+  box-shadow: inset 0px 0px 100px 100px rgb(0, 0, 0);
+}
+
+.thirdImg {
+  width: 80%;
+  border-top: 5px solid darkred;
+  box-shadow: inset 0px 0px 100px 120px rgba(0, 0, 0);
+}
+
+.imgContainer img {
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  position: relative;
+}
+
+.public__reviewRow {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.public__createUsers {
+  display: flex;
+}
+.public__rolesTickets {
+  display: flex;
+  gap: 50px;
+}
+
+@media (max-width: 699px) {
+  .public__reviewRow {
+    flex-direction: column;
+    align-items: center;
+  }
+  .public__reviewTitle {
+    margin-top: -50px;
+    font-size: 1rem !important;
+  }
+  .thirdReview {
+    margin-bottom: 2rem !important;
+  }
+  .thirdReviewTitle h1 {
+    font-size: 2.5rem;
+  }
+  .imgContainer {
+    width: 100%;
+
+    box-shadow: inset 0px 0px 60px 60px rgba(0, 0, 0);
+  }
+  .imgContainer img {
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    position: relative;
+  }
+  .textRolesTickets {
+    font-size: 1.6rem !important;
+  }
+  .public__spanBigText {
+    font-size: 1.5rem !important;
+    border-left: none !important;
+  }
+  .public__createUsers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .public__rolesTickets {
+    display: flex;
+    flex-direction: column;
+  }
+  .thirdReviewTitle {
+    margin-bottom: -1rem !important;
+  }
+}
+
+.public__reviewTitle {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+}
+
+.thirdReview {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.thirdReviewTitle {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: -2rem;
+}
+
+.public__reviewCreate {
+  font-size: 5rem;
+  font-weight: 800;
+  display: flex;
+
+  color: var(--secondary-color);
+}
+
+.public__spanBigText {
+  color: darkred;
+  font-size: 10rem;
+  border-left: 100px solid darkred;
+  border-bottom: 5px solid darkred;
+
+  border-color: rgb(32, 31, 31);
+}
+
+.imgRolesTickets {
+  width: 80%;
+  box-shadow: inset 0px 0px 50px 50px rgba(0, 0, 0);
+}
+
+.textRolesTickets {
+  font-size: 5rem;
+  font-weight: bolder;
+  color: rgb(16, 16, 16) !important;
+  background: -webkit-linear-gradient(
+    rgb(0, 0, 0),
+    rgb(91, 14, 14),
+    rgb(44, 1, 1),
+    rgb(0, 0, 0)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.public__tableText {
+  color: var(--secondary-color);
+
+  text-align: center;
+  font-weight: bolder;
+  border-bottom: 1px solid darkred;
+  position: relative;
+  font-size: 5rem;
+}
+
+@media (max-width: 699px) {
+  .public__tableText {
+    font-size: 2rem;
+  }
+  .public__rolesTickets {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 90%;
+    margin: -6rem auto;
+  }
+}
+
+.borderDiv {
+  background-image: linear-gradient(black, rgb(22, 22, 22));
+  width: 30px;
+  height: "100%";
+}
+
+.tableSection {
+  flex-direction: column;
+}
+
+.tableImg {
+  width: 100%;
+}
+.public__bugymanFooter {
+  color: rgb(21, 21, 21);
+  font-size: 2rem;
+  text-align: center;
+  border-top: 1px solid rgb(52, 4, 4);
+}
+
+.public__loginLinkToTop {
+  color: var(--secondary-color);
+}

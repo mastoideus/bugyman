@@ -1,0 +1,46 @@
+.notes-container {
+}
+
+.notes__table {
+  width: 100%;
+  color: whitesmoke;
+}
+
+table th {
+  border-bottom: 2px solid darkred;
+  background-color: rgb(17, 16, 16);
+  padding: 0.9rem;
+  text-align: left;
+  color: var(--secondary-color);
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 44px;
+  height: 44px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 699px) {
+  .notes_tableContainer {
+    overflow-x: scroll;
+  }
+}

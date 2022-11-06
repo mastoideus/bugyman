@@ -1,0 +1,23 @@
+.form__divider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.form__editNoteSelect {
+  padding: 0.3rem;
+  color: white;
+}
+.form__input {
+  font-family: var(--primary-fontf);
+}
+
+@media (max-width: 699px) {
+  .form {
+    width: 100%;
+  }
+  .form__checkbox-container {
+    font-size: 0.75rem;
+  }
+}

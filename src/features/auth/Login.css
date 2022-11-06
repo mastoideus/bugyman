@@ -1,0 +1,29 @@
+.login {
+  text-align: center;
+}
+
+.login__headerTitle {
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
+
+.login__main {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__btn {
+  font-size: 1rem;
+  animation: none;
+}
+
+@media (max-width: 699px) {
+  .login__main {
+    width: 90%;
+  }
+}

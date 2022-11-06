@@ -1,0 +1,54 @@
+.bugyman__textTop {
+  color: whitesmoke;
+  float: right;
+  text-align: left;
+  position: absolute;
+  padding-left: 1rem;
+  left: 0;
+  border-left: 5px solid darkred;
+}
+
+.bugyman__bugy {
+  font-size: 10rem;
+
+  background: -webkit-linear-gradient(rgb(31, 30, 30), rgb(0, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  font-family: var(--primary-fontf);
+}
+
+.bugyman__login {
+  color: wheat;
+  border-top: 1px solid darkred;
+  width: 100%;
+  width: 60%;
+  margin: 0 auto;
+  border-left: none;
+  padding: 1rem 0;
+}
+
+.bugyman__textBottom {
+  color: whitesmoke;
+  float: right;
+  text-align: right;
+  position: absolute;
+  padding-right: 1rem;
+  right: 0;
+  border-right: 5px solid darkred;
+}
+
+@media (min-width: 699px) {
+  .bugyman__textTop {
+    width: 50%;
+    top: 40px;
+  }
+  .bugyman__bugy {
+    font-size: 16rem;
+  }
+
+  .bugyman__textBottom {
+    width: 50%;
+    bottom: 40px;
+  }
+}

@@ -1,0 +1,31 @@
+.dash-footer {
+  color: whitesmoke;
+  height: 10vh;
+  background-color: rgb(21, 20, 20);
+  padding: 1rem 2rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  z-index: 500;
+}
+
+.dash-footer p {
+  padding: 0rem 1rem;
+}
+
+.dash-footer__button {
+  background-color: transparent;
+  text-align: center;
+  padding: 0rem 1rem;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  color: darkred;
+  font-family: var(--primary-fontf);
+}
+
+.dash-footer__button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
