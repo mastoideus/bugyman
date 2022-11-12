@@ -56,9 +56,12 @@ const Login = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          height: "100vh",
         }}
       >
-        <div className="lds-dual-ring">Please wait</div>
+        <div className="lds-dual-ring">
+          <small style={{ color: "white" }}>Please wait</small>
+        </div>
       </div>
     );
   }
