@@ -59,8 +59,16 @@ const Login = () => {
           height: "100vh",
         }}
       >
-        <div className="lds-dual-ring"></div>
-        <small style={{ color: "white" }}>Please wait</small>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <div className="lds-dual-ring"></div>
+          <small style={{ color: "white" }}>Please wait</small>
+        </div>
       </div>
     );
   }
