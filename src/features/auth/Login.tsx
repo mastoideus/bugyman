@@ -49,7 +49,18 @@ const Login = () => {
   };
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return (
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <div className="lds-dual-ring">Please wait</div>
+      </div>
+    );
   }
 
   const content = (
