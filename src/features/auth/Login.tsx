@@ -59,9 +59,8 @@ const Login = () => {
           height: "100vh",
         }}
       >
-        <div className="lds-dual-ring">
-          <small style={{ color: "white" }}>Please wait</small>
-        </div>
+        <div className="lds-dual-ring"></div>
+        <small style={{ color: "white" }}>Please wait</small>
       </div>
     );
   }
